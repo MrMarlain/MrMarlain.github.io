@@ -1,0 +1,14 @@
+.no-padding-no-margin {
+	padding: 0px;
+	margin: 0px;
+}
+
+div {
+	background-color: #eeeeee;
+
+}
+
+#background-video {
+	width: 100vw;
+	position: fixed;
+}
