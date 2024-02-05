@@ -1,0 +1,44 @@
+body {
+	background-color: #222222;
+}
+
+#header {
+/*	background-color: #dddddd;*/
+	width: 90%;
+	margin: auto;
+}
+
+#content {
+	background-color: #bbbbbb;
+	width: 80%;
+	margin: auto;
+
+	text-align: center;
+}
+
+.table_buttons {
+	padding: 0px;
+	border-spacing: 0px;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.a_href_button {
+    display: inline-block;
+    background-color: #8C959D;
+    color: #fff;
+/*	height: 100%;*/
+	width: 100%;
+/*	padding-block: 100%;*/
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	border-radius: 25px;
+    text-decoration: none;
+}
+
+.td_button {
+	text-align: center;
+}
+
+
