@@ -1,6 +1,6 @@
 // video
 const video_names = [
-	"video_1", "video_1"
+	"video_1"
 ];
 
 //https://getfile.dokpub.com/yandex/ - получить прямую ссылку на файл с яндекс диска
