@@ -1,20 +1,20 @@
 // video
 const video_names = [
-	"video_1", "video_2"
+	"video_1"
 ];
 
 //https://getfile.dokpub.com/yandex/ - получить прямую ссылку на файл с яндекс диска
-const video_href = [
+/*const video_href = [
 	"https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/i/45dnXWvdpCXZAg",
 	"https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/i/GKB_1bvsV2SzMQ"
-]
+]*/
 
 function getRandomInt(max) {
 	return Math.floor(Math.random() * max);
 }
 
-//document.getElementById("background-video").src = "Data/" + video_names[getRandomInt(2)] + ".mp4";
-document.getElementById("background-video").src = video_href[getRandomInt(video_href.length)];
+document.getElementById("background-video").src = "Data/" + video_names[video_names.length] + ".mp4";
+//document.getElementById("background-video").src = video_href[getRandomInt(video_href.length)];
 
 document.getElementById("background-video").load();
 
