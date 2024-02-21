@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Home</title>
-	<link rel="shortcut icon" href="icon.ico" type="image/png">
+    <title>css</title>
+    <!-- <link rel="shortcut icon" href="icon.ico" type="image/png"> -->
 	<link rel="stylesheet" href="styles.css">
-	<script src="scripts.js" defer></script>
+	<!-- <script src="scripts.js" defer></script> -->
 </head>
-<body class="no-padding-no-margin">
-	<div>
-		<video id="background-video" autoplay loop muted>
-			<source src="" type="video/mp4">
-		</video>
+<body class="background_image background_fixed">
+	<div id="container" >
+		<a name="start_page"></a>
+		
+		<div id="slider">
+			<table border="0px" cellpadding="0px" cellspacing="0px" style="table-layout: fixed" width="100%">
+				<tr>
+					<td><div><a class="a_button" href="https://google.com">кнопка 1</a></div></td>
+					<td><div><a class="a_button" href="https://google.com">кнопка 2</a></div></td>
+					<td><div><a class="a_button" href="https://google.com">кнопка 3</a></div></td>
+					<td><div><a class="a_button" href="https://google.com">кнопка 4</a></div></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="content">
+			<span>
+				<h1>Много текста</h1>
+				<t>а тут сам текст</t>
+			</span>
+		</div>
+		
+		<div id="footer">
+			footer
+		</div>
+	</div>
+
+	<div id="return_up">
+		<a class="a_button" href="#start_page">up</a>
 	</div>
 </body>
 </html>
