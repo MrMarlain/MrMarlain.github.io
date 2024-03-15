@@ -1,0 +1,256 @@
+body {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Helvetica";
+
+    overflow: auto;
+}
+
+
+#container {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+#load_screen {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    top: 0px;
+    left: 0px;
+
+    
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 100;
+}
+#load_screen[class*="white_theme"] {
+    background-color: white;
+}
+#load_screen[class*="dark_theme"] {
+    background-color: black;
+}
+#load_screen > div {
+    margin: auto;
+}
+@keyframes hide {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+
+#header {
+    position:sticky;
+    margin: 10px 0px;
+}
+
+
+
+.frame {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    margin: 10px;
+
+    border-style: solid;
+    border-radius: 10px;
+    
+    transition: border-color 0.125s ease-out 0s;
+    transition: background-color 0.125s ease-out 0s;
+}
+.frame[class*="white_theme"] {
+    border-color: lightgray;
+}
+.frame:hover[class*="white_theme"] {
+    border-color: gray;
+}
+.frame[class*="dark_theme"] {
+    border-color: gray;
+}
+.frame:hover[class*="dark_theme"] {
+    border-color: lightgray;
+}
+
+
+.frame_title > a {
+    text-decoration: none;
+    cursor: pointer;
+
+    padding: 5px 15px;
+    border-radius: 38px;
+
+    display: inline-block;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: background-color 0.125s ease-out 0s;
+}
+.frame[class*="white_theme"] > .frame_title > a {
+    color: black;
+    background-color: white;
+}
+.frame[class*="dark_theme"] > .frame_title > a {
+    color: white;
+    background-color: black;
+}
+.frame[class*="white_theme"] > .frame_title > a:hover {
+    background-color: lightgray;
+}
+.frame[class*="dark_theme"] > .frame_title > a:hover {
+    background-color: darkgray;
+}
+
+
+.a_icon_1::before {
+    content: '';
+
+    background-repeat: no-repeat;
+    background-size: 1em auto;
+    background-image: url('data/icon_1.svg');
+    
+    width: 1.5em;
+    height: 1em;
+
+    background-position: left center;
+    float: left;
+}
+.a_icon_2::before {
+    content: '';
+
+    background-repeat: no-repeat;
+    background-size: 1em auto;
+    background-image: url('data/icon_2.svg');
+    
+    width: 1.5em;
+    height: 1em;
+
+    background-position: left center;
+    float: left;
+}
+.a_icon_3::before {
+    content: '';
+
+    background-repeat: no-repeat;
+    background-size: 1em auto;
+    background-image: url('data/icon_3.svg');
+    
+    width: 1.5em;
+    height: 1em;
+
+    background-position: left center;
+    float: left;
+}
+
+
+.frame_text {
+    padding: 10px 25px;
+    text-align: justify;
+}
+
+
+.frame_list {
+    border-style: solid;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    transition: border-color 0.125s ease-out 0s;
+}
+.frame_list[class*="white_theme"] {
+    border-color: lightgray;
+}
+.frame_list[class*="dark_theme"] {
+    border-color: gray;
+}
+.frame_list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.btn > label {
+    cursor: pointer;
+
+    display: inline-block;
+    
+    padding: 1em 1.5em;
+
+    border-radius: 2em;
+    border-style: solid;
+    
+    transition: border-color 0.125s ease-out 0s;
+    transition: background-color 0.125s ease-out 0s;
+}
+.btn[class*="white_theme"] > label {
+    background-color: white;
+    border-color: lightgray;
+    color: black;
+}
+.btn[class*="dark_theme"] > label {
+    background-color: black;
+    border-color: gray;
+    color: white;
+}
+.btn[class*="white_theme"] > label:hover {
+    border-color: gray;
+}
+.btn[class*="dark_theme"] > label:hover {
+    border-color: lightgray;
+}
+.btn[class*="white_theme"] > label:active {
+    background-color: gray;
+}
+.btn[class*="dark_theme"] > label:active {
+    background-color: lightgray;
+}
+
+
+.btn_menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.noselect {  /* злостно украдено */
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.white_theme {
+    background-color: white;
+    border-color: lightgray;
+    color: black;
+}
+
+.dark_theme {
+    background-color: black;
+    border-color: gray;
+    color: white;
+}
