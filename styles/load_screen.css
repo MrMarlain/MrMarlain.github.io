@@ -1,0 +1,29 @@
+#load_screen {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    top: 0px;
+    left: 0px;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 100;
+
+    background-color: white;
+}
+#load_screen > div {
+    margin: auto;
+}
+
+@keyframes hide {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
