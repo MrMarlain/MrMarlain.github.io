@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/data.js"></script>
+    <script src="../scripts/script.js" defer></script>
+
+    <script src="../scripts/pages/index.js" defer></script>
+</head>
+<body class="ecnt col algi_stretch" style="width: 100vw; overflow-x: hidden;">
+    <input type="checkbox" id="theme">
+
+    <div id="container" class="ecnt col algi_stretch biggap" style="min-height: 100vh;">
+        <div id="header" class="cnt col algi_stretch jc_center noround top sticky top">
+            <div class="scnt row jc_spacebetween margin20x">
+                <div class="ecnt row algi_center">
+                    <button class="btn" href="index.html">
+                        <span>Главная</span>
+                    </button>
+                </div>
+
+                <div class="ecnt row algi_center">
+                    <button class="btn" href="services.html">
+                        <span>Услуги</span>
+                    </button>
+
+                    <button class="btn" href="portfolio.html">
+                        <span>Портфолио</span>
+                    </button>
+
+                    <button class="btn" href="contacts.html">
+                        <span>Контакты</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="preview" class="ecnt col algi_center jc_center margin40y">
+            <img id="img_preview" alt="img_preview" class="imgs_4">
+            <div class="ecnt col algi_center nogap">
+                <span id="username"></span>
+                <span id="names"></span>
+                <span id="occupation" class="darkened"></span>
+            </div>
+        </div>
+
+        <div id="content" class="ecnt col margin20x flexgrow">
+            <div class="cnt col biggap">
+                <div class="ecnt col algi_stretch">
+                    <span class="title">Обо мне</span>
+                    <span id="about_me" class="margin20x"></span>
+                </div>
+
+                <div class="ecnt col algi_stretch">
+                    <span class="title">Проекты</span>
+                    <div id="projects" class="ecnt col margin20x algi_start"></div>
+                </div>
+                
+                <div class="ecnt col algi_stretch">
+                    <button class="btn outline" href="services.html">
+                        <span>Узнать больше</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer" class="cnt col noround">
+            <div class="gcnt margin20x" style="grid-template-columns: min-content auto;">
+                <span>Почта</span>
+                <span id="email"></span>
+            </div>
+        </div>
+    </div>
+
+    <label for="theme" class="btn fixed bottom right margin20x margin20y translucent">
+        <img src="../data/icons/moon.svg" class="light_theme" alt="moon">
+        <img src="../data/icons/sun.svg" class="dark_theme" alt="sun">
+    </label>
+</body>
+</html>
