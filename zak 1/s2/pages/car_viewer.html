@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAINSTYLE</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js" defer></script>
+
+    <script src="../scripts/data.js" defer></script>
+
+    <script src="../scripts/pages/car_viewer.js" defer></script>
+</head>
+<body class="ecnt col jc_start algi_stretch" style="overflow-x: hidden; min-height: 100vh;">
+    <input type="checkbox" id="theme">
+    
+    <div id="container" class="ecnt col algi_stretch flexgrow">
+        <div id="header" class="cnt col noround shadow sticky top">
+            <div class="gcnt margin20x" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="ecnt row algi_center" style="place-self: start;">
+                    <button class="btn" href="index.html">
+                        <span>LBRG</span>
+                    </button>
+                </div>
+
+                <div class="ecnt row algi_center" style="place-self: end;">
+                    <button class="btn" href="catalog.html">
+                        <span>Каталог</span>
+                    </button>
+                    <button class="btn" href="about_me.html">
+                        <span>О нас</span>
+                    </button>
+                </div>
+            </div>
+        </div> 
+
+        <div class="ecnt col algi_stretch flexgrow">
+            <div id="content" class="ecnt col margin20x biggap">
+                <img id="img_car_preview" alt="" style="width: 100%; border-radius: 8px;">
+                <span id="car_name" class="title algs_center"></span>
+
+                <div class="cnt col">
+                    <div class="ecnt col">
+                        <span class="title">Описание</span>
+                        <span id="car_description" class="margin20x"></span>
+                    </div>
+
+                    <div class="ecnt col">
+                        <span class="title">Цена</span>
+                        <span id="car_price" class="margin20x"></span>
+                    </div>
+
+                    <div class="ecnt col">
+                        <span class="title">Галерея</span>
+                        <div id="car_gallery" class="ecnt col margin20x"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scnt row margin20x">
+            <button class="btn">
+                <span class="darkened">+41 32 466 40 44</span>
+            </button>
+            <button class="btn">
+                <span class="darkened">info@lamborghiniporrentruy.ch</span>
+            </button>
+        </div>
+    </div>
+
+    <button class="btn fixed bottom right margin20x margin20y nobackground" for="theme">
+        <img src="../data/icons/sun.svg" class="dark_theme">
+        <img src="../data/icons/luna.svg" class="light_theme">
+    </button>
+</body>
+</html>

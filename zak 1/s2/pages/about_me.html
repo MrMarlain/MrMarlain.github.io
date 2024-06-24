@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAINSTYLE</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js" defer></script>
+
+    <link rel="stylesheet" href="../styles/pages/catalog.css">
+    <script src="../scripts/pages/index.js" defer></script>
+</head>
+<body class="ecnt col jc_start algi_stretch" style="overflow-x: hidden; min-height: 100vh;">
+    <input type="checkbox" id="theme">
+    
+    <div id="container" class="ecnt col algi_stretch flexgrow">
+        <div id="header" class="cnt col noround shadow sticky top">
+            <div class="gcnt margin20x" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="ecnt row algi_center" style="place-self: start;">
+                    <button class="btn" href="index.html">
+                        <span>LBRG</span>
+                    </button>
+                </div>
+
+                <div class="ecnt row algi_center" style="place-self: end;">
+                    <button class="btn" href="catalog.html">
+                        <span>Каталог</span>
+                    </button>
+                    <button class="btn" href="about_me.html">
+                        <span>О нас</span>
+                    </button>
+                </div>
+            </div>
+        </div> 
+
+        <div class="ecnt col algi_stretch flexgrow">
+            <div id="content" class="cnt col margin20x biggap">
+                <div class="ecnt col">
+                    <span class="title">О компании</span>
+                    <div class="ecnt col margin20x">
+                        <div class="ecnt row biggap">
+                            <img src="../data/images/lamborghini_logo.png" alt="" class="imgs_4">
+                            <span>Lamborghini – это легендарный итальянский бренд, воплощающий в себе неповторимый стиль, мощь и страсть. С момента своего основания в 1963 году компания стала символом роскоши, престижа и высоких технологий.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ecnt col">
+                    <span class="title">История</span>
+                    <div class="ecnt col margin20x">
+                        <span>
+                            История Lamborghini началась в 1948 году, когда Ферруччо Ламборгини основал компанию по производству тракторов. Его страсть к автомобилям привела к тому, что в 1963 году он основал Lamborghini Automobili, чтобы создавать роскошные спортивные автомобили, которые могли конкурировать с Ferrari.
+                            <br><br>
+                            Первый автомобиль Lamborghini, 350 GT, был представлен в 1963 году. С тех пор компания произвела множество легендарных моделей, включая Miura, Countach, Diablo, Murciélago, Aventador и Huracán.
+                            <br><br>
+                            Lamborghini всегда отличалась своими инновационными технологиями, мощными двигателями, эксклюзивным дизайном и неповторимым стилем. Автомобили Lamborghini стали символом роскоши, престижа и высоких технологий, привлекающие внимание успешных и амбициозных людей со всего мира.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="ecnt col">
+                    <span class="title">Контакты</span>
+                    <div class="gcnt margin20x" style="grid-template-columns: min-content auto; place-items: start; align-items: center;">
+                        <span>Phone</span>
+                        <button class="btn">
+                            <span>+41 32 466 40 44</span>
+                        </button>
+
+                        <span>Email</span>
+                        <button class="btn">
+                            <span>info@lamborghiniporrentruy.ch</span>
+                        </button>
+
+                         <span>Address</span>
+                        <button class="btn">
+                            <span>Voyeboeuf 1A, 2900 Porrentruy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scnt row margin20x">
+            <button class="btn">
+                <span class="darkened">+41 32 466 40 44</span>
+            </button>
+            <button class="btn">
+                <span class="darkened">info@lamborghiniporrentruy.ch</span>
+            </button>
+        </div>
+    </div>
+
+    <button class="btn fixed bottom right margin20x margin20y nobackground" for="theme">
+        <img src="../data/icons/sun.svg" class="dark_theme">
+        <img src="../data/icons/luna.svg" class="light_theme">
+    </button>
+</body>
+</html>
